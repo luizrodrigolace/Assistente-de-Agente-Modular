@@ -1,0 +1,9 @@
+# Ignora as pastas node_modules de TODOS os projetos
+**/node_modules
+
+# Ignora os arquivos .env de TODOS os projetos
+**/.env
+
+# Arquivos de sistema operacional
+.DS_Store
+*.log
