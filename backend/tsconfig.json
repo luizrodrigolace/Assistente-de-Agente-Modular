@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "target": "es2020", // Define a versão do JavaScript que o TS vai gerar
+    "module": "commonjs", // Padrão do Node.js
+    "moduleResolution": "node",
+    "outDir": "./dist", // Onde o código compilado (JavaScript) vai ficar
+    "rootDir": "./src", // Onde o nosso código (TypeScript) vai ficar
     "esModuleInterop": true,
-    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, // Liga várias checagens de tipo
     "skipLibCheck": true
-  }
+  },
+  "include": ["src/**/*"] // Só compila arquivos dentro da pasta 'src'
 }
