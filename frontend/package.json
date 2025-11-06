@@ -10,16 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^2.0.63",
+    "@ai-sdk/react": "^2.0.87",
+    "ai": "^5.0.87",
     "cors": "^2.8.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.5",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@types/cors": "^2.8.19",
     "@types/node": "^24.6.0",
-    "@types/react": "^19.1.16",
+    "@types/react": "^19.2.2",
     "@types/react-dom": "^19.1.9",
     "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^5.0.4",
@@ -30,5 +34,8 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.45.0",
     "vite": "^7.1.7"
+  },
+  "exports": {
+    "./react": "./node_modules/@ai-sdk/react/dist/index.js"
   }
 }
